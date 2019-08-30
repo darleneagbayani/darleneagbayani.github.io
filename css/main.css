@@ -22,11 +22,11 @@ body{
 }
 ::selection {
 	color: #fff;
-	background-color: #000;
+	background-color: #0a0a0a;
 }
 ::-moz-selection {
 	color: #fff;
-	background-color: #000;
+	background-color: #0a0a0a;
 }
 
 
@@ -71,7 +71,7 @@ body{
 .navbar:show {
   display: block;
   opacity: 0.5;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(10, 10, 10, 1);
   transition: opacity .15s linear;
 }
 .navbar-brand img{
@@ -109,7 +109,6 @@ body{
 	content: '';
 	z-index: 3;
     transition: all 300ms linear;
-	background-color: #fff;
 }
 .navbar-light .navbar-toggler-icon:after{
 	top: 8px;
@@ -399,7 +398,7 @@ body.hero-anime #switch{
 	font-size: 13px;
 	letter-spacing: 1px;
 	color: #212121;
-	background-color: #fcfaff;
+	background-color: #0a0a0a;
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
@@ -687,7 +686,7 @@ footer {
 .social-icons a{
   background-color:#eceeef;
   color:#fff;
-  font-size:25px;
+  font-size:20px;
   display:inline-block;
   line-height:44px;
   width:44px;
@@ -706,9 +705,9 @@ footer {
 }
 .social-icons.size-sm a
 {
-  line-height:34px;
-  height:34px;
-  width:34px;
+  line-height:30px;
+  height:30px;
+  width:30px;
   font-size:14px
 }
 .social-icons a.facebook:hover
@@ -738,6 +737,6 @@ footer {
 }
 .copyright-text {
 	font-weight: 200;
-	font-size: 10pt;
+	font-size: 8pt;
 	line-height: 12pt;
 }
