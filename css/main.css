@@ -560,10 +560,15 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     box-shadow: 0 0 0 20px rgba(12,12,12,.1);
 }
 
+/* section1
+================================================== */
+.section1 {
+	background-color: #fff;
+}
 
 /* images
 ================================================== */
-.mx-auto.rounded-circle {
+.profile {
 	width: 200px;
 }
 
@@ -737,6 +742,6 @@ footer {
 }
 .copyright-text {
 	font-weight: 200;
-	font-size: 8pt;
-	line-height: 12pt;
+	font-size: 10pt;
+	line-height: 14pt;
 }
