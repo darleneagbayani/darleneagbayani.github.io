@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   color: #212112; /*
 	background-image: url('../img/index/background.jpg'); */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/index/background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/index/background.jpg');
   background-position: center center;
   background-repeat: repeat;
   background-size: cover;
@@ -220,17 +220,22 @@ h1 span {
   opacity: 2;
   transform: translate(0);
 }
+.welcome {
+	opacity: 0.7;
+	font-size: 90pt !important;
+	line-height: 80pt !important;
+}
 body.hero-anime h1 span:nth-child(1) {
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-20px) 0.4s ease-in;
 }
 body.hero-anime h1 span:nth-child(2) {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-30px) ease-in;
 }
 body.hero-anime h1 span:nth-child(3) {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-20px) 0.4s ease-in;
 }
 body.hero-anime h1 span:nth-child(4) {
   opacity: 0;
@@ -565,12 +570,51 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .section1 {
   background-color: #fff;
 }
+.hr-white {
+	 display: block; 
+	height: 1px;
+    border: 0; 
+	border-top: 1px solid #fff;
+    margin: 1em 0; 
+	padding: 0;
+}
+.welcome-font {
+	font-weight: 100;
+}
+/* carousel
+================================================== */
+.slider-size {
+  height: 350px;
+}
+.item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+/* custom button
+================================================== */
+.custom-button {
+	padding-left: 20px;
+	padding-right: 20px;
+  border-radius: 40px !important;
+}
 /* images
 ================================================== */
 .profile {
   width: 200px;
 }
-/* images
+.welcome-image {
+	height: 100% !important;
+	padding: 0px !important;
+	overflow-y: hidden !important;
+	display: block;
+}
+/* footer
 ================================================== */
 footer {
   background-color: #0a0a0a;
