@@ -1,7 +1,7 @@
 // main js
 // navbar scroll transparent to solid
   $(window).scroll(function() {
-    if ($(window).scrollTop() >= 500) {
+    if ($(window).scrollTop() >= 150) {
       $(".navbar").addClass("bg-dark");
     } else {
       $(".navbar").removeClass("bg-dark");
