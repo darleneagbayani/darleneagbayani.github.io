@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
   transition: all 200ms linear;
 }
+.full-height-welcome {
+	height: 100vh !important;
+}
 /* images
 ================================================== */
 .profile {
