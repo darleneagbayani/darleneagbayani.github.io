@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* background
+================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212112; /*
+	background-image: url('../img/index/background.jpg'); */
+  background: url('../img/websites/background.jpg');
+  background-position: center center;
+  background-repeat:no-repeat !important;
+  background-size: cover;
+  background-color: #000;
+  overflow-x: hidden;
+	overflow-y:visible;
+  transition: all 200ms linear;
+}
+.website-container {
+	margin-top: 0px !important;
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+}
+/* font
+================================================== */
+.website-image {
+	width: 100% !important;
+}
+
+/* font
+================================================== */
+.website-font {
+	font-weight: 400;
+}
+/* experience-section1
+================================================== */
+.website-section1 {
+  background-color: #fff;
+}
