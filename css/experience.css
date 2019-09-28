@@ -25,29 +25,22 @@ body {
 .experience-font {
 	font-weight: 400;
 }
+.list-unstyled {
+	font-size: 10pt;
+}
 /* experience-section1
 ================================================== */
 .experience-section1 {
   background-color: #0a0a0a;
 }
- .verticaltext {
-     position: relative;
-     padding-left: 50px;
-     margin: 1em 0;
-     min-height: 120px;
- }
 
- .verticaltext-content {
-     -webkit-transform: rotate(-90deg);
-     -moz-transform: rotate(-90deg);
-     -ms-transform: rotate(-90deg);
-     -o-transform: rotate(-90deg);
-     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-     left: -20px;
-     top: 40px;
-     position: absolute;
-     color: #FFF;
- }
+.fa-rotate-90 {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+	float:inherit;
+}
+
 /* accordion
 ================================================== */
 .accordion-toggle.collapsed {
