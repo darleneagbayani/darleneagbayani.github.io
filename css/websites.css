@@ -11,18 +11,20 @@ body {
   color: #212112; /*
 	background-image: url('../img/index/background.jpg'); */
   background: url('../img/websites/background.jpg');
-  background-position: center center;
-  background-repeat:no-repeat!important;
+  background-position: top center;
+  background-repeat: no-repeat !important;
   background-size: cover;
   background-color: #0a0a0a !important;
+  background-attachment: fixed !important;
   overflow-x: hidden !important;
-    overflow-y:visible;
+  overflow-y: visible;
   transition: all 200ms linear;
 }
-/* test remove
+
 .website-container {
 	margin-top: 0px !important;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(1, 1, 1, 0.5), rgba(9, 9, 9, 0.9));
+    overflow: hidden !important;
+    background-color: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.3, rgba(0,0,0,.5)));
 }
 /* images
 ================================================== */
@@ -189,7 +191,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin: auto;
-  overflow: hidden;
+  overflow: hidden!important;
 }
 
 .content:hover .content-overlay {
@@ -271,7 +273,7 @@ body {
 	font-weight: 400;
 }
 .subtitle {
-    color:#444444;
+    color:#9F9F9F;
     font-size: 12pt;
     margin-bottom: 0px;
 }
@@ -284,9 +286,9 @@ body {
 	font-size: 10pt;
 }
 .accordion-toggle.collapsed {
-	color: #fff;
-    font-weight: 300;
+    color:#fff;
     font-size: 11pt;
+    margin-bottom: 0px;
     margin: 0px;
 	text-decoration: none;
 }
@@ -303,7 +305,7 @@ body {
 }
 #accordion .panel-heading a.collapsed:hover,
 #accordion .panel-heading a.collapsed:focus {
-  background-color: transparent;
+  background-color: #0a0a0a;
   color: #fff;
   transition: all 0.2s ease-in;
     font-weight: 300;
@@ -339,7 +341,6 @@ body {
   font-weight: lighter;
   transform: rotate(0deg);
   transition: all 0.2s ease-in;
-    font-weight: 300;
     font-size: 11pt;
 }
 #accordion .panel-heading .accordion-toggle.collapsed::before {
