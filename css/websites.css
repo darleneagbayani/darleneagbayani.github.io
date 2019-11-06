@@ -24,7 +24,7 @@ body {
 .website-container {
 	margin-top: 0px !important;
     overflow: hidden !important;
-    background-color: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.3, rgba(0,0,0,.5)));
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(3,3,3,.5), rgba(3,3,3,1));
 }
 /* images
 ================================================== */
@@ -277,6 +277,17 @@ body {
     font-size: 12pt;
     margin-bottom: 0px;
 }
+.description-title {
+    color:#fff;
+    font-size: 11pt;
+    font-weight:500 !important;
+    margin-bottom: 0px;
+}
+.description-content {
+    color:#fff;
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
 /* accordion
 ================================================== */
 .experience-font {
@@ -287,7 +298,7 @@ body {
 }
 .accordion-toggle.collapsed {
     color:#fff;
-    font-size: 11pt;
+    font-size: 8pt;
     margin-bottom: 0px;
     margin: 0px;
 	text-decoration: none;
@@ -309,27 +320,27 @@ body {
   color: #fff;
   transition: all 0.2s ease-in;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 8pt;
 }
 #accordion .panel-heading a.collapsed:hover::before,
 #accordion .panel-heading a.collapsed:focus::before {
   color: fff;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 8pt;
 }
 #accordion .panel-heading {
   padding: 0;
   border-radius: 0px;
   text-align: left;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 8pt;
 }
 #accordion .panel-heading a:not(.collapsed) {
   color: #fff;
   background-color: transparent;
   transition: all 0.2s ease-in;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 8pt;
 }
 
 /* Add Indicator fontawesome icon to the left */
@@ -341,7 +352,7 @@ body {
   font-weight: lighter;
   transform: rotate(0deg);
   transition: all 0.2s ease-in;
-    font-size: 11pt;
+    font-size: 8pt;
 }
 #accordion .panel-heading .accordion-toggle.collapsed::before {
   color: #fff;
