@@ -12,11 +12,12 @@ body {
 	background-image: url('../img/index/background.jpg'); */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/experience/background.jpg');
   background-position: center center;
-  background-repeat: repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
-  background-color: #fff;
-  overflow-x: hidden;
-	over-flow-y: scroll;
+  background-color: #0a0a0a !important;
+  background-attachment: fixed !important;
+  overflow-x: hidden !important;
+  overflow-y: visible;
   transition: all 200ms linear;
 }
 

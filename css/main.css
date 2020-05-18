@@ -581,6 +581,7 @@ footer {
   font-size: 15px;
   line-height: 24px;
   color: #fff;
+	bottom: 0;
 }
 .site-footer hr {
   border-top-color: #bbb;
