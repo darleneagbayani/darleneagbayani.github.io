@@ -61,67 +61,71 @@
 </div>
 
 <!-- designs body -->
-    <div class="full-height section contact-section">
-      <div class="pt-5 mt-5 px-0 full-height container-fluid justify-content-center contact-container">
-        <div class="mx-0 my-0 px-0 py-0 row justify-content-center">
-          <div class="mx-0 my-0 px-0 py-0 col-12">
-            <div class="px-0 mx-0 pt-5 mt-5 container-fluid">
-              <div class="px-0 mx-0 pt-5 mt-5 mb-5 justify-content-center row"> 
-                
-                <!-- form column -->
-                <div class="mx-0 px-0 pb-5 col-lg-7 col-md-7 col-sm-12">
-                  <div class="mx-0 px-0 justify-content-center row">
-                    <div class="col">
-                      <label>Thank you for visiting, for inquiries please send a message.</label>
-                      <hr>
-                      <form id="email-form" method="POST" action="send.php" class="contact-form">
-                        <div class="form-row">
-                          <div class="form-group col">
-                            <label for="name">* Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="">
-                          </div>
-                          <div class="form-group col">
-                            <label for="email">* Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="">
-                          </div>
+<div class="full-height section contact-section">
+  <div class="pt-5 mt-5 px-0 full-height container-fluid justify-content-center contact-container">
+    <div class="mx-0 my-0 px-0 py-0 row justify-content-center">
+      <div class="mx-0 my-0 px-0 py-0 col-12">
+        <div class="px-0 mx-0 pt-5 mt-5 container-fluid">
+          <div class="px-0 mx-0 pt-5 mt-5 mb-5 justify-content-center row"> 
+            
+            <!-- form column -->
+            <div class="mx-0 px-0 pb-5 col-lg-7 col-md-7 col-sm-12">
+              <div class="mx-0 px-0 justify-content-center row">
+                <div class="col">
+                  <label>Thank you for visiting, for inquiries please send a message.</label>
+                  <hr>
+                  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbzxROt92VDJleO57X-eMpRe7vNOC0AwWwQvPGPyTg/exec">
+                    <div class="form-elements">
+                      <div class="form-row">
+                        <div class="form-group col">
+                          <label for="name">* Name</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="">
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col">
-                            <label for="message">* Message</label>
-                            <textarea type="text" class="form-control" id="msg" name="msg" placeholder="" rows="3"></textarea>
-                          </div>
+                        <div class="form-group col">
+                          <label for="email">* Email</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="">
+                          <span class="email-invalid" style="display:none"> Must be a valid email address</span> </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+                          <label for="message">* Message</label>
+                          <textarea type="text" class="form-control" id="message" name="message" placeholder="" rows="3"></textarea>
                         </div>
-                        <div class="form-row">
-                          <div class="mb-1 col">
-                            <button type="submit" class="btn btn-dark">SEND</button>
-                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="mb-1 col">
+                          <button class="btn btn-dark">SEND</button>
                         </div>
-                      </form>
+                      </div>
                     </div>
+					  <div class="thankyou_message" style="display:none;">
+                      Your message has been sent. Please allow a few days for response.
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            <!-- information column -->
+            <div class="mx-0 px-0 col-lg-3 col-md-3 col-sm-12 full-height-container">
+              <div class="px-0 mx-0 mt-1 mb-1 py-1 justify-content-center row">
+                <div class="mb-3 col-4">
+                  <div class="justify-content-center row">
+                    <div class="mb-2 col-6"> <img src="img/contact/mail.svg" alt="contact"> </div>
                   </div>
-                </div> 
-                
-                <!-- information column -->
-                <div class="mx-0 px-0 col-lg-3 col-md-3 col-sm-12 full-height-container">
-                  <div class="px-0 mx-0 mt-1 mb-1 py-1 justify-content-center row">
-                    <div class="mb-3 col-4">
-                      <div class="justify-content-center row">
-                        <div class="mb-2 col-6"> <img src="img/contact/mail.svg" alt="contact"> </div>
-                      </div>
-                      <div class="justify-content-center row">
-                        <p class="text-center custom-font">dnagbayani@gmail.com</p>
-                      </div>
-                    </div>
+                  <div class="justify-content-center row">
+                    <p class="text-center custom-font">dnagbayani@gmail.com</p>
                   </div>
-                  <div class="px-0 mx-0 my-1 py-1 justify-content-center row">
-                    <div class="mb-3 col-4">
-                      <div class="justify-content-center row">
-                        <div class="mb-2 col-6"> <img src="img/contact/location.svg" alt="location"> </div>
-                      </div>
-                      <div class="justify-content-center row">
-                        <p class="text-center custom-font">Honolulu, HI</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="px-0 mx-0 my-1 py-1 justify-content-center row">
+                <div class="mb-3 col-4">
+                  <div class="justify-content-center row">
+                    <div class="mb-2 col-6"> <img src="img/contact/location.svg" alt="location"> </div>
+                  </div>
+                  <div class="justify-content-center row">
+                    <p class="text-center custom-font">Honolulu, HI</p>
                   </div>
                 </div>
               </div>
@@ -129,6 +133,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
   
   <!-- Site footer -->
   <footer class="site-footer">
@@ -147,5 +153,9 @@
     </div>
   </footer>
 </div>
+
+<!-- Submit the Form to Google Using "AJAX" --> 
+<script data-cfasync="false" type="text/javascript"
+  src="js/form-submission-handler.js"></script>
 </body>
 </html>
