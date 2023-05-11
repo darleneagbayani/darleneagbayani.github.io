@@ -41,7 +41,6 @@ body {
   width: auto;
   margin-top: 0px !important;
   top: 25vh;
-  background-color: #fff;
 }
 .sticky-top {
   top: 25vh;
@@ -67,7 +66,7 @@ body {
 }
 
 .row-custom-img img {
-	 position: top center;
+  position: top center;
   max-height: 100%;
   min-width: auto;
   object-fit: cover;
