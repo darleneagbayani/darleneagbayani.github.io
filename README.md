@@ -1,2 +1,1 @@
-# firstbootstrap
-First time using Bootstrap Toolkit
+Professional Portfolio for Web and Graphic Designer
