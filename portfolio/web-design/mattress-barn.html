@@ -72,8 +72,6 @@
                                     DESIGN</a></li>
                             <li><a class="dropdown-item" href="../ux-ui-design.html" title="UX/UI Design">UX/UI
                                     DESIGN</a></li>
-                            <li><a class="dropdown-item" href="../digital-design.html" title="Digital Design">DIGITAL
-                                    DESIGN</a></li>
                             <li><a class="dropdown-item" href="../motion-graphic.html" title="Motion Graphic">MOTION
                                     GRAPHIC</a></li>
                             <li><a class="dropdown-item" href="../illustration.html"
@@ -165,8 +163,8 @@
                                     <div class="row px-2">
                                         <div id="main-image" class="position-relative mb-3 px-0">
                                             <img src="../../images/web-design/mattress/mattress-barn-1.webp" alt="Home Page"
-                                                class="gallery-img img-fluid" data-bs-toggle="modal"
-                                                data-bs-target="#imageModal">
+                                                class="gallery-img img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" class="gallery-img img-fluid"
+                                                onclick="changeModalImage(this)">
                                             <!-- Font Awesome zoom icon -->
                                             <span class="zoom-icon">
                                                 <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal"
@@ -177,19 +175,23 @@
                                     <div id="gallery" class="row px-0 pb-3">
                                         <div class="col-4 pb-4">
                                             <img src="../../images/web-design/mattress/mattress-barn-1.webp" alt="Home Page"
-                                                class="gallery-img img-fluid" onclick="changeMainImage(this)">
+                                                class="gallery-img img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" class="gallery-img img-fluid"
+                                                onclick="changeModalImage(this)">
                                         </div>
                                         <div class="col-4 pb-4">
                                             <img src="../../images/web-design/mattress/mattress-barn-4.webp" alt="Home Page"
-                                                class="gallery-img img-fluid" onclick="changeMainImage(this)">
+                                                class="gallery-img img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" class="gallery-img img-fluid"
+                                                onclick="changeModalImage(this)">
                                         </div>
                                         <div class="col-4 pb-4">
                                             <img src="../../images/web-design/mattress/mattress-barn-2.webp" alt="Home Page Categories"
-                                                class="gallery-img img-fluid" onclick="changeMainImage(this)">
+                                                class="gallery-img img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" class="gallery-img img-fluid"
+                                                onclick="changeModalImage(this)">
                                         </div>
                                         <div class="col-4 pb-4">
                                             <img src="../../images/web-design/mattress/mattress-barn-3.webp" alt="Home Page About and Footer"
-                                                class="gallery-img img-fluid" onclick="changeMainImage(this)">
+                                                class="gallery-img img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" class="gallery-img img-fluid"
+                                                onclick="changeModalImage(this)">
                                         </div>
                                     </div>
                                 </div>
@@ -213,8 +215,8 @@
                                     </div>
                                 </div>
                                 
-                                    <script>
-                                        function changeMainImage(element) {
+                                     <script>
+                                        function changeModalImage(element) {
                                             var imageUrl = element.getAttribute('src');
                                             var altText = element.getAttribute('alt');
                                             
@@ -225,10 +227,6 @@
                                             // Update modal title text
                                             var modalTitle = document.querySelector('#imageModal .modal-title');
                                             modalTitle.innerText = altText;
-                                    
-                                            // Show the modal
-                                            var modal = new bootstrap.Modal(document.getElementById('imageModal'));
-                                            modal.show();
                                         }
                                     </script>
                             </div>

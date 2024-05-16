@@ -214,31 +214,31 @@
                                     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
 
-                                    <script>
-                                 function changeMainImage(element) {
+                                   <script>
+    function changeMainImage(element) {
         var imageUrl = element.getAttribute('src');
         var altText = element.getAttribute('alt');
 
         // Update modal image source
-        var modalImage = document.getElementById('digitalModalImage');
+        var modalImage = document.getElementById('modalImage');
         modalImage.src = imageUrl;
 
         // Update modal title text
-        var modalTitle = document.querySelector('#digitalModal .modal-title');
+        var modalTitle = document.querySelector('#imageModal .modal-title');
         modalTitle.innerText = altText;
 
         // Show the modal
-        var modal = new bootstrap.Modal(document.getElementById('digitalModal'));
+        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
         modal.show();
 
         // Event listener to ensure backdrop is removed when modal is hidden
-        document.getElementById('digitalModal').addEventListener('hidden.bs.modal', function () {
+        document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
             document.querySelectorAll('.modal-backdrop').forEach(function(backdrop) {
                 backdrop.remove();
             });
         });
     }
-                                </script>
+</script>
                             </div>
 
                             <!-- Right Column: Text Description -->
