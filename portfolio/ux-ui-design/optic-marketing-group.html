@@ -214,23 +214,30 @@
                                     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
 
-                                <script>
-                                    function changeMainImage(element) {
-                                        var imageUrl = element.getAttribute('src');
-                                        var altText = element.getAttribute('alt');
+                                    <script>
+                                 function changeMainImage(element) {
+        var imageUrl = element.getAttribute('src');
+        var altText = element.getAttribute('alt');
 
-                                        // Update modal image source
-                                        var modalImage = document.getElementById('modalImage');
-                                        modalImage.src = imageUrl;
+        // Update modal image source
+        var modalImage = document.getElementById('digitalModalImage');
+        modalImage.src = imageUrl;
 
-                                        // Update modal title text
-                                        var modalTitle = document.querySelector('#imageModal .modal-title');
-                                        modalTitle.innerText = altText;
+        // Update modal title text
+        var modalTitle = document.querySelector('#digitalModal .modal-title');
+        modalTitle.innerText = altText;
 
-                                        // Show the modal
-                                        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
-                                        modal.show();
-                                    }
+        // Show the modal
+        var modal = new bootstrap.Modal(document.getElementById('digitalModal'));
+        modal.show();
+
+        // Event listener to ensure backdrop is removed when modal is hidden
+        document.getElementById('digitalModal').addEventListener('hidden.bs.modal', function () {
+            document.querySelectorAll('.modal-backdrop').forEach(function(backdrop) {
+                backdrop.remove();
+            });
+        });
+    }
                                 </script>
                             </div>
 

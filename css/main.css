@@ -566,6 +566,34 @@ a:focus {
         /* Set the desired fixed height */
       }
 
+      /* Custom CSS for making the modal full width */
+@media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .modal-content {
+      width: 100vw;
+      height: auto;
+    }
+  
+    .modal-header, .modal-body {
+      padding: 1rem;
+    }
+  }
+  
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 30px !important;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    align-items: center !important;
+}
+
 /* motion graphic */
 /* CSS to maintain aspect ratio of embedded video */
 .video-container {
