@@ -1,7 +1,6 @@
 /* all */
 body {
     font-family: 'Poppins', sans-serif !important;
-
 }
 
 a {
@@ -51,15 +50,34 @@ h6 {
     font-size: 14px;
 }
 
+.pr-2 {
+    padding-right: 2em !important;
+}
+
 /* navigation */
 a.nav-link {
     font-size: 12pt !important;
 }
+.nav-link-portfolio.active {
+    color: #000 !important;
+  }
 #nav-icon1 {
     width: 25px;
     height: 18px;
     position: relative;
     cursor: pointer;
+}
+
+.nav-link-portfolio {
+    color:#5c5c5c !important;
+    font-size: 10pt;
+    font-weight: 300;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    display: contents;
+    position: relative;
+    padding-right: 2em;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 .navbar-light .navbar-toggler,
@@ -219,12 +237,12 @@ a:focus {
         /* Add smooth transition for hover effect */
         border: 1px solid black;
     }
-    
+
     .portfolio-item-graphic:hover {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
-        background-size:  180% auto;
+        background-size: 180% auto;
         background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
@@ -318,12 +336,12 @@ a:focus {
         /* Add smooth transition for hover effect */
         border: 1px solid black;
     }
-    
+
     .portfolio-item-graphic:hover {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
-        background-size:  180% auto;
+        background-size: 180% auto;
         background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
@@ -421,7 +439,7 @@ a:focus {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
-        background-size:  180% auto;
+        background-size: 180% auto;
         background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
@@ -447,7 +465,6 @@ a:focus {
 }
 
 /* home cat */
-
 .overlay {
     position: absolute;
     top: 0;
@@ -487,7 +504,6 @@ a:focus {
     /* Adjust the values as needed */
 }
 
-
 /* resume */
 .card {
     border: 0px !important;
@@ -507,7 +523,6 @@ a:focus {
 
 /* web design */
 /* web cat */
-
 .overlay {
     position: absolute;
     top: 0;
@@ -558,35 +573,38 @@ a:focus {
 }
 
 /* graphic design */
-
-    /* Add this style block */
-    #digital-gallery .col-md-3 {
-      
-        min-height: 200px;
-        /* Set the desired fixed height */
-      }
-
-      /* Custom CSS for making the modal full width */
+/* Add this style block */
+#digital-gallery .col-md-3 {
+    min-height: 200px;
+    /* Set the desired fixed height */
+}
+.img-fluid-custom {
+max-width: 100%;
+max-height: calc(100vh - 8em);
+}
+/* Custom CSS for making the modal full width */
 @media (min-width: 576px) {
     .modal-dialog {
-      max-width: 100%;
-      margin: 0;
+        max-width: 100%;
+        margin: 0;
     }
-  
+
     .modal-content {
-      width: 100vw;
-      height: auto;
+        width: 100vw;
+        height: auto;
     }
-  
-    .modal-header, .modal-body {
-      padding: 1rem;
+
+    .modal-header,
+    .modal-body {
+        padding: 1rem;
     }
-  }
-  
-  .modal-dialog {
+}
+
+.modal-dialog {
     max-width: 100% !important;
     margin: 30px !important;
 }
+
 .modal-body {
     position: relative;
     flex: 1 1 auto;
@@ -599,7 +617,8 @@ a:focus {
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio */
 }
 
 .video-container iframe {
