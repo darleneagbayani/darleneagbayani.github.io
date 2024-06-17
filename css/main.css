@@ -74,7 +74,7 @@ a.nav-link {
     font-weight: 300;
     font-family: 'Lora', serif;
     letter-spacing: 2px;
-    display: contents;
+    display: contents !important;
     position: relative;
     padding-right: 2em;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
