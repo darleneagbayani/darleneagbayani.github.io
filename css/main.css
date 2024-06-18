@@ -69,8 +69,9 @@ a.nav-link {
 }
 
 .nav-link-portfolio {
-    color:#5c5c5c !important;
-    font-size: 10pt;
+    color:#8a8a8a !important;
+    font-size: 12pt;
+    line-height: 16pt;
     font-weight: 300;
     font-family: 'Lora', serif;
     letter-spacing: 2px;
@@ -172,7 +173,9 @@ a:focus {
 .dropdown-item:active {
     background-color: #e9ecef !important;
 }
-
+nav.navbar-custom.pt-4 {
+    padding-bottom: 10px;
+}
 /* header logo */
 /* Mobile styles (up to 767px) */
 @media (max-width: 767px) {
