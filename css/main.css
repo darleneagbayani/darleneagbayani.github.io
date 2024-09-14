@@ -225,13 +225,14 @@ nav.navbar-custom.pt-4 {
 
     .portfolio-item-web {
         position: relative;
-        min-height: 400px;
+        min-height: 180px;
         overflow: hidden;
         background-position: center top;
         background-size: cover;
         /* Ensure the background image covers the entire column */
         background-repeat: no-repeat;
         /* Prevent the background image from repeating */
+        height: 100%;
         /* Ensure the column's height matches the content */
         transition: transform 0.3s ease;
         /* Add transition for smooth zoom effect */
@@ -244,6 +245,8 @@ nav.navbar-custom.pt-4 {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
+        background-size: 180% auto;
+        background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
     }
@@ -295,6 +298,8 @@ nav.navbar-custom.pt-4 {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
+        background-size: auto 180%;
+        background-position: top center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
     }
@@ -339,6 +344,8 @@ nav.navbar-custom.pt-4 {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
+        background-size: 180% auto;
+        background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
     }
@@ -407,6 +414,8 @@ nav.navbar-custom.pt-4 {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
+        background-size: auto 180%;
+        background-position: top center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
     }
@@ -433,6 +442,8 @@ nav.navbar-custom.pt-4 {
         color: white;
         cursor: pointer;
         border: 1px solid black !important;
+        background-size: 180% auto;
+        background-position: center center;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
         /* Adjust the values as needed */
     }
@@ -572,18 +583,7 @@ nav.navbar-custom.pt-4 {
 }
 .img-fluid-custom {
 max-width: 100%;
-}
-.img-fluid-custom-library {
-    max-height: 100px;        /* Limit the height */
-    width: 100%;              /* Full width of the parent */
-    object-fit: cover;        /* Cover the area and crop the image */
-    object-position: top center; /* Position the image at the top center */
-}
-.img-fluid-custom-main {
-    object-position: top center; /* Position the image at the top center */
-    max-height: 400px;
-    width: 100%;
-    object-fit: cover;
+max-height: calc(100vh - 8em);
 }
 /* Custom CSS for making the modal full width */
 @media (min-width: 576px) {
