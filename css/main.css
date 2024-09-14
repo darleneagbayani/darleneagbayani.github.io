@@ -583,7 +583,7 @@ nav.navbar-custom.pt-4 {
 }
 .img-fluid-custom {
 max-width: 100%;
-max-height: calc(100vh - 8em);
+height:auto;
 }
 
 .img-fluid-custom-library {
