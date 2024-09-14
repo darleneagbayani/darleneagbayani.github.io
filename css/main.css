@@ -574,7 +574,11 @@ nav.navbar-custom.pt-4 {
     z-index: 1;
     /* Ensure icon is above the image */
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+    .hide-tablet {
+        display: none;
+    }
+}
 /* graphic design */
 /* Add this style block */
 #digital-gallery .col-md-3 {
