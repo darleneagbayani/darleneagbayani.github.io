@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Instrument';
+    src: url('../font/InstrumentSerif-Regular.ttf') format('ttf'),
+        url('../font/InstrumentSerif-Regular.woff') format('woff'),
+        url('../font/InstrumentSerif-Regular.woff2') format('woff2');
+    font-weight: 400;
+    /* Bold weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baleny';
+    src: url('../font/BalenySerifFree-Regular.ttf') format('ttf'),
+        url('../font/BalenySerifFree-Regular.woff') format('woff'),
+        url('../font/BalenySerifFree-Regular.woff2') format('woff2');
+    font-weight: 400;
+    /* Bold weight */
+    font-style: normal;
+}
+
+:root {
+    --primary: #cac8c6;
+    /* neutral brown */
+    --darkgray: #333333;
+    /* dark gray */
+    --black: #202020;
+    /* dark gray */
+    --midgray: #454545;
+    /* light gray */
+    --lightgray: #666666;
+    /* light gray */
+    --lightergray: #999999;
+    /* light gray */
+    --bg-image-main: url('https://images.unsplash.com/photo-1603484477859-abe6a73f9366?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    --bg-image-index: url('https://images.unsplash.com/photo-1603484477859-abe6a73f9366?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    --gif-circle-1-index: url('https://designsbydarlene.github.io/images/circle-2.gif');
+    --gif-circle-2-index: url('https://designsbydarlene.github.io/images/circle.gif');
+    --overlay-color: rgba(183, 177, 171, 0.666);
+}
+
+body {
+    font-family: 'Instrument', serif;
+    color: var(--black);
+    margin: 0;
+    /* Reset default margin */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll on mobile */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    /* Change to fixed to ensure it covers the viewport during scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--bg-image-main);
+    /* Add your image path here */
+    background-size: cover;
+    /* Ensure the image covers the entire area */
+    background-repeat: no-repeat;
+    /* Prevent repeating */
+    background-position: center;
+    /* Center the image */
+    z-index: -12;
+    /* Place it behind the content */
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    /* Change to fixed for full viewport coverage */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--overlay-color);
+    /* Change to desired overlay color with 0.5 opacity */
+    z-index: -11;
+    /* Place it behind the content */
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+    font-family: "Baleny", serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-stretch: expanded;
+    transform: scaleY(1.5);
+    letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+        /* Or flex/inline depending on the context */
+    }
+}
+
+/* Hide on tablet (min-width: 768px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hide-tablet {
+        display: none;
+        /* Or flex/inline depending on the context */
+    }
+}
+
+@media (min-width: 1025px) {
+    .hide-desktop {
+        display: none;
+        /* Or flex/inline depending on the context */
+    }
+}
+
+
+.no-wrap {
+    white-space: nowrap;
+}

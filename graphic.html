@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/portfolio-style.css"> <!-- Link to CSS -->
+    <link rel="icon" href="./../images/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="nav-menu" role="navigation">
+        <div id="menuToggle">
+            <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+            <input type="checkbox" />
+
+            <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+            <ul id="menu">
+                <li><a href="./index.html" title="Home">Home</a></li>
+                <li class="">
+                    <div tabindex="0" class="onclick-menu">
+                        <a href="./index.html" class="portfolio-trigger visited">PORTFOLIO</a>
+                        <ul class="onclick-menu-content">
+                            <li><a class="mobile-drop" href="./web.html" title="Web Design">Web Design</a></li>
+                            <li><a class="mobile-drop" href="#" title="Graphic Design"><strong>Graphic Design</strong></a></li>
+                            <li><a class="mobile-drop" href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+                            <li><a class="mobile-drop" href="./illustration.html" title="Illustration">Illustration</a></li>
+                            <li><a class="mobile-drop" href="./motion.html" title="Motion Design">Motion Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+        <li><a href="./about.html" title="About">About</a></li>
+                <li><a href="./resume.html" title="Resume">Resume</a></li>
+                <li><a href="./contact.html" title="Contact">Contact</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-div">
+       <div id="desktop" class="sticky-wrapper">
+			<header>
+				<div class="header-content">
+
+					<div class="header-left">
+						<h1>Elevating Brands with Award-Winning Design</h1>
+						<a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+					</div>
+					<div class="header-right">
+						<p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer
+							Science, and top-ranked designs at my agency, I craft visually compelling and
+							user-centric experiences that stand out.</p>
+					</div>
+				</div>
+			</header>
+			<nav>
+				<div class="dropdown"><a class="" href="./index.html" title="Home">Home</a></div>
+				<div class="dropdown portfolio-dropdown">
+					<a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+					<div class="dropdown-content">
+						<a href="./web.html" title="Web Design">Web Design</a>
+						<a href="#" title="Graphic Design"><strong>Graphic Design</strong></a>
+						<a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a>
+						<a href="./illustration.html" title="Illustration">Illustration</a>
+						<a href="./motion.html" title="Motion Design">Motion Design</a>
+					</div>
+				</div>
+				<div class="dropdown"><a href="./about.html" title="About">About</a></div>
+				<div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+				<div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+			</nav>
+		</div>
+        <header id="mobile">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>Elevating Brands with Award-Winning Design</h1>
+                    <a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+                </div>
+                <div class="header-right">
+                    <p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer Science (HCI
+                        focus), and top-ranked designs at my agency, I craft visually compelling and user-centric
+                        experiences that stand out.</p>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobile" class="sticky-wrapper">
+            <nav>
+                <div class="dropdown"><a href="./index.html" title="Home">Home</a></div>
+                <div class="dropdown">
+					<a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-link" href="./web.html" title="Web Design">Web Design</a>
+                        <a href="#" title="Graphic Design"><strong>Graphic Design</strong></a>
+                        <a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a>
+                        <a href="./illustration.html" title="Illustration">Illustration</a>
+                        <a href="./motion.html" title="Motion Design">Motion Design</a>
+                    </div>
+                </div>
+                <div class="dropdown"><a href="./about.html" title="About">About</a></div>
+                <div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+                <div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+            </nav>
+        </div>
+        <section class="grid-outer">
+
+            <div class="grid-with-label">
+                <div class="rotated-label" id="graphic">Graphic Design.</div>
+                <section class="grid">
+                <div class="card">
+  <a href="#" class="open-modal" data-modal="logo-modal" title="Graphic Design">
+    <img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/graphic-brand-design-thumbnail.webp"
+         alt="White Rose Logo">
+    <span>Clean & Elegant Logo Design</span>
+  </a>
+</div>
+
+
+                    <div class="card">
+                      
+  <a href="#" class="open-modal" data-modal="patrick-modal" title="Graphic Design">
+                        <img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/st-patricks-thumbnail.webp"
+                            alt="St. Patricks Day Sale">
+    <span>Feeling The Season</span></a>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="open-modal" data-modal="email-modal" title="Graphic Design">
+
+                        <img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-email-banner-thumbnail.webp"
+                            alt="GotSport Webinar Email">
+                          <span>Bright & Bold Email Blast</span></a>
+                    </div>
+                </section>
+            </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="tel:18084995911" title="Call">808.499.5911</a><br>
+            <a href="mailto:darlene.agbayani@gmail.com">darlene.agbayani@gmail.com</a>
+            </p>
+            <ul class="footer-services">
+                <li><a href="./about.html" title="About">About</a></li>
+                <li><a href="./resume.html" title="Resume">Resume</a></li>
+                <li><a href="./web.html" title="Web Design">Web Design</a></li>
+                <li><a href="#" title="Graphic Design">Graphic Design</a></li>
+                <li><a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+                <li><a href="./illustration.html" title="Illustration">Illustration</a></li>
+                <li><a href="./motion.html" title="Motion Design">Motion Design</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <img src="./../images/logo.svg" alt="Logo" class="footer-logo">
+        </div>
+    </footer>
+    </div>
+
+<!-- Modal -->
+  <!-- LOGO MODAL -->
+<div id="logo-modal" class="modal">
+  <div class="modal-inner">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <div class="modal-header">
+      <h2>Clean & Elegant Logo Design</h2>
+      <p>Designed a timeless logo for White Rose Furniture, a newly established, family-owned furniture store. The branding captures the elegance and approachability of their handcrafted offerings, with a soft yet structured aesthetic that reflects both tradition and modern comfort. This logo served as the foundation for their visual identity across digital and print.
+
+</p>
+    </div>
+
+    <!-- Full-size image -->
+    <div class="modal-image-display">
+      <img id="main-image-electrolux" src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/white-rose-logo.webp" alt="Full Home Page">
+    </div>
+  </div>
+</div>
+
+<!-- AWARD MODAL -->
+<div id="email-modal" class="modal">
+  <div class="modal-inner">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <div class="modal-header">
+      <h2>Bright & Bold Email Blast</h2>
+      <p>Developed a clean, high-impact email header graphic to promote the new GotSport Live demo. The design draws attention to key features of the app while maintaining clarity and brand consistency across email platforms. Optimized for mobile responsiveness and inbox visibility.
+</p>
+    </div>
+
+    <!-- Full-size image -->
+    <div class="modal-image-display">
+      <img id="main-image-award" src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-email-banner.webp" alt="GotSport Live Email Banner">
+    </div>
+  </div>
+</div>
+
+
+  
+<!-- COMPTON MODAL -->
+<div id="patrick-modal" class="modal">
+  <div class="modal-inner">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <div class="modal-header">
+      <h2>Feeling The Season</h2>
+      <p>Created a festive promotional graphic for a St. Patrick’s Day sales event, balancing bold call-to-action visuals with seasonal flair. Designed for use across email, social media, and digital signage to drive traffic and highlight limited-time offers.
+</p>
+    </div>
+
+    <!-- Full-size image -->
+    <div class="modal-image-display">
+     <img id="main-image-compton" src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/st-patricks.webp" alt="St. Patrick's Day Sales Promotion Image">
+    </div>
+  </div>
+</div>
+
+
+    <!-- Link to JS -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

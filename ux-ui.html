@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/portfolio-style.css"> <!-- Link to CSS -->
+  <link rel="icon" href="./../images/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <div class="nav-menu" role="navigation">
+    <div id="menuToggle">
+      <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+      <input type="checkbox" />
+
+      <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+      <ul id="menu">
+        <li><a href="./index.html" title="Home">Home</a></li>
+        <li class="">
+          <div tabindex="0" class="onclick-menu">
+            <a href="./index.html" class="portfolio-trigger visited">PORTFOLIO</a>
+            <ul class="onclick-menu-content">
+              <li><a class="mobile-drop" href="./web.html" title="Web Design">Web Design</a></li>
+              <li><a class="mobile-drop" href="./graphic.html" title="Graphic Design">Graphic &
+                  Brand Design</a></li>
+              <li><a class="mobile-drop" href="#" title="UX/UI Design"><strong>UX/UI Design</strong></a></li>
+              <li><a class="mobile-drop" href="./illustration.html" title="Illustration">Illustration</a></li>
+              <li><a class="mobile-drop" href="./motion.html" title="Motion Design">Motion Design</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./about.html" title="About">About</a></li>
+        <li><a href="./resume.html" title="Resume">Resume</a></li>
+        <li><a href="./contact.html" title="Contact">Contact</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-div">
+    <div id="desktop" class="sticky-wrapper">
+      <header>
+        <div class="header-content">
+
+          <div class="header-left">
+            <h1>Elevating Brands with Award-Winning Design</h1>
+            <a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+          </div>
+          <div class="header-right">
+            <p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer
+              Science, and top-ranked designs at my agency, I craft visually compelling and
+              user-centric experiences that stand out.</p>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="dropdown"><a class="" href="./index.html" title="Home">Home</a></div>
+        <div class="dropdown portfolio-dropdown">
+          <a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+          <div class="dropdown-content">
+            <a href="./web.html" title="Web Design">Web Design</a>
+            <a href="./graphic.html" title="Graphic Design">Graphic Design</a>
+            <a href="#" title="UX/UI Design"><strong>UX/UI Design</strong></a>
+            <a href="./illustration.html" title="Illustration">Illustration</a>
+            <a href="./motion.html" title="Motion Design">Motion Design</a>
+          </div>
+        </div>
+        <div class="dropdown"><a href="./about.html" title="About">About</a></div>
+        <div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+        <div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+      </nav>
+    </div>
+    <header id="mobile">
+      <div class="header-content">
+        <div class="header-left">
+          <h1>Elevating Brands with Award-Winning Design</h1>
+          <a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+        </div>
+        <div class="header-right">
+          <p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer Science (HCI
+            focus), and top-ranked designs at my agency, I craft visually compelling and user-centric
+            experiences that stand out.</p>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile" class="sticky-wrapper">
+      <nav>
+        <div class="dropdown"><a href="./index.html" title="Home">Home</a></div>
+        <div class="dropdown">
+          <a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+          <div class="dropdown-content">
+            <a href="./web.html" title="Web Design">Web Design</a>
+            <a href="./graphic.html" title="Graphic Design">Graphic Design</a>
+            <a href="#" title="UX/UI Design"><strong>UX/UI Design</strong></a>
+            <a href="./illustration.html" title="Illustration">Illustration</a>
+            <a href="./motion.html" title="Motion Design">Motion Design</a>
+          </div>
+        </div>
+        <div class="dropdown"><a href="./about.html" title="About">About</a></div>
+        <div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+        <div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+      </nav>
+    </div>
+    <section class="grid-outer">
+
+      <div class="grid-with-label">
+        <div class="rotated-label" id="ux">UX/UI Design.</div>
+        <section class="grid">
+
+          <div class="card">
+
+            <a href="#" class="open-modal" data-modal="tap-modal" title="Taproot Tree Service UX/UI Design">
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/taproot-thumbnail.webp"
+                alt="GotSport Travel Mobile Hotel Booking">
+              <span>Designing for Growth</span></a>
+          </div>
+
+          <div class="card">
+
+            <a href="#" class="open-modal" data-modal="travel-mobile-modal" title="GotSport Travel Desktop UX/UI Design">
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-mobile-hotel-thumbnail.webp"
+                alt="GotSport Travel Mobile Hotel Booking">
+              <span>Bookings On The Go</span></a>
+          </div>
+
+          <div class="card">
+            <a href="#" class="open-modal" data-modal="travel-desktop-modal" title="GotSport Travel Desktop UX/UI Design">
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/hotel-store-thumbnail.webp"
+                alt="GotSport Travel Hotel Booking">
+              <span>Hotel Bookings Re-Imagined</span>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="#" class="open-modal" data-modal="sharpify-modal" title="Sharpify Mobile UX/UI Design">
+
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/sharpify-mockup-thumbnail.webp"
+                alt="Sharpify Interface Mockup">
+              <span>Trading Upwards</span></a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <a href="tel:18084995911" title="Call">808.499.5911</a><br>
+          <a href="mailto:darlene.agbayani@gmail.com">darlene.agbayani@gmail.com</a>
+          </p>
+          <ul class="footer-services">
+            <li><a href="./about.html" title="About">About</a></li>
+            <li><a href="./resume.html" title="Resume">Resume</a></li>
+            <li><a href="./web.html" title="Web Design">Web Design</a></li>
+            <li><a href="./graphic.html" title="Graphic Design">Graphic Design</a></li>
+            <li><a href="#" title="UX/UI Design">UX/UI Design</a></li>
+            <li><a href="./illustration.html" title="Illustration">Illustration</a></li>
+            <li><a href="./motion.html" title="Motion Design">Motion Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <img src="./../images/logo.svg" alt="Logo" class="footer-logo">
+        </div>
+      </footer>
+  </div>
+
+  <!-- Modal -->
+  <!-- ELECTROLUX MODAL -->
+  <div id="tap-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Designing for Growth</h2>
+        <p>This project is a complete UX/UI redesign for a local tree service company looking to modernize their online presence. The goal was to create a clean, intuitive experience that builds trust and makes it easy for users to request services, learn about offerings, and navigate with ease.
+The design features a streamlined layout, refreshed visual identity, and improved content hierarchy—all optimized for mobile responsiveness.
+Below are a few screenshots showcasing the redesign in action.
+<br><br>
+
+          View My Process: <a class="link" href="https://www.figma.com/design/7rPtaGNLK58kZ60mAWN1AK/JD-MARKETING-TEST-PROJECT---DARLENE-AGBAYANI--Copy-?node-id=3-7&t=Iw7uqkb3jPBDf93W-1" target="_blank" title="Figma Project for Taproot Tree Service">Figma Project</a>
+
+</p>
+      </div>
+
+      <!-- Thumbnail grid -->
+      <div class="modal-thumbnail-grid">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tap-full-page.webp"
+          alt="Full Home Page" class="thumb" data-target="main-image-tap">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/taproot-promo.webp"
+          alt="Category Page" class="thumb" data-target="main-image-tap">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tap-reviews.webp"
+          alt="Electrolux Color Scheme" class="thumb" data-target="main-image-tap">
+      </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-tap"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tap-full-page.webp"
+          alt="Full Home Page">
+      </div>
+    </div>
+  </div>
+
+  <!-- AWARD MODAL -->
+  <div id="travel-desktop-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Hotel Bookings Re-Imagined</h2>
+        <p>The desktop version of GotSport Travel serves as a centralized platform for teams, parents, and coaches to coordinate hotel bookings for tournaments. This redesign focused on improving the overall user flow, visual clarity, and responsiveness of the interface—ensuring that users can browse, filter, and reserve accommodations with minimal friction.
+Enhancements include a cleaner layout, more intuitive booking steps, and clearer hierarchy across key touchpoints, all while maintaining consistency with GotSport’s broader design system.
+<br>
+<br>
+          View My Process: <a class="link" href="https://www.figma.com/design/rTKGY61D16I0FT6wRrNJzk/Travel---Mobile-View?node-id=815-3387&p=f&t=uKeNZnIo2dtzd9Uc-0" target="_blank" title="Figma Project for GotSport Travel Desktop App">Figma Project</a>
+</p>
+      </div>
+
+      <!-- Thumbnail grid -->
+      <div class="modal-thumbnail-grid">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-hotel-redesign-full-page.webp"
+          alt="GotSport Travel Full Home Page" class="thumb" data-target="main-image-travel-desktop">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-hotel-redesign-hotel-amenities-page.webp"
+          alt="Amenities Section" class="thumb" data-target="main-image-travel-desktop">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-hotel-redesign-hotel-choose-room-page.webp"
+          alt="Choose Room" class="thumb" data-target="main-image-travel-desktop">
+      </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-travel-desktop"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-hotel-redesign-full-page.webp"
+          alt="GotSport Travel Full Home Page">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- COMPTON MODAL -->
+  <div id="travel-mobile-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Bookings On The Go</h2>
+        <p>GotSport Travel is a sub-application of the GotSport platform that helps teams, parents, and coaches easily book hotel accommodations for tournaments. Originally designed with desktop users in mind, the mobile experience lacked usability and clarity.
+This project focused on rethinking the mobile interface to prioritize accessibility, ease of booking, and clear navigation. The redesign introduces streamlined flows, mobile-first layouts, and intuitive touch interactions—making travel coordination simple, even on the go.
+        <br>
+        <br>
+                  View My Process: <a class="link" href="https://www.figma.com/design/rTKGY61D16I0FT6wRrNJzk/Travel---Mobile-View?node-id=703-2480" target="_blank" title="Figma Project for GotSport Travel Mobile App">Figma Project</a>
+        </p>
+
+      </div>
+
+      <!-- Thumbnail grid -->
+      <div class="modal-thumbnail-grid">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/travel-screen-1.webp"
+          alt="Travel Screen Book Hotel" class="thumb" data-target="main-image-travel-mobile">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/travel-screen-2.webp"
+          alt="Travel Description" class="thumb" data-target="main-image-travel-mobile">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/travel-screen-3.webp"
+          alt="Travel Description" class="thumb" data-target="main-image-travel-mobile">
+      </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-travel-mobile"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/travel-screen-1.webp"
+          alt="Travel Screen Book Hotel">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SHARPIFY MODAL -->
+  <div id="sharpify-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Bookings On The Go</h2>
+        <p>Sharpify is a startup focused on delivering AI-powered predictive modeling and data-driven tools for smarter investing. As a freelance UX/UI Designer in an internship role, I collaborated with the founding team to help establish the product’s early visual direction.
+
+This project includes the creation of a foundational style guide, low-fidelity wireframes, and initial high-fidelity mockups—aimed at shaping a clean, modern interface that reflects Sharpify’s analytical edge while remaining approachable for users navigating complex financial tools. The goal was to set a scalable design framework that could grow with the product. <br>
+        <br>
+                  View My Process: <a class="link" href="https://www.figma.com/design/9iTlif69I4LbZvuQWN5wSL/Style-Guide?node-id=0-1&p=f&t=JSnSzTzdpCGY27Ly-0" target="_blank" title="Figma Project for GotSport Travel Mobile App">Figma Project</a>
+        </p>
+
+      </div>
+
+      <!-- Thumbnail grid -->
+      <div class="modal-thumbnail-grid">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/sharpify-mockup.webp"
+          alt="Sharpify Trading Main Page" class="thumb" data-target="main-image-sharpify">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/sharpify-light-page.webp"
+          alt="Travel Description" class="thumb" data-target="main-image-sharpify">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/sharpify-style-guide.webp"
+          alt="Travel Description" class="thumb" data-target="main-image-sharpify">
+      </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-sharpify"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/sharpify-mockup.webp"
+          alt="Sharpify Trading Main Page" >
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Link to JS -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

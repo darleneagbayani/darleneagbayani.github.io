@@ -1,0 +1,324 @@
+
+/*******************************************
+************** Recent Works ****************/
+.pr { padding-right:20px;}
+
+/* Container styling */
+.cat-scroll-container {
+    margin: 30px;
+    /* Full width minus margin */
+    scroll-behavior: auto;
+    /* Smooth scroll effect */
+    display: flex;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch !important;
+    /* Enable smooth scrolling for mobile Safari */
+}
+
+.cat-scroll-container-header {
+    margin: 20px 15px 0px;
+    padding: 10px 0px;
+    width: calc(100% - 30px);
+    /* Full width minus margin */
+    scroll-behavior: auto;
+    /* Smooth scroll effect */
+    display: flex;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Enable smooth scrolling for mobile Safari */
+}
+
+/* Scrollbar styling */
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+.cat-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.cat-scroll-container {
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE and Edge */
+}
+
+/* Image styling */
+/* Image Container for Aspect Ratio */
+.image-container {
+    position: relative;
+    /* For absolute positioning of image */
+    overflow: hidden;
+    /* Prevent overflow of image */
+    /* Full width of the column */
+    padding-top: 40%;
+    /* 5:2 aspect ratio */
+    border: 1px solid var(--darkgray);
+}
+
+/* Scaling Image */
+.scale-image {
+    position: absolute;
+    /* Position the image absolutely */
+    top: 0;
+    /* Align to the top of the container */
+    left: 0;
+    /* Align to the left of the container */
+    width: calc(100% + 1px);
+    /* Full width of the container */
+    height: 100%;
+    /* Full height of the container */
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    object-position: top center;
+    /* Center the image */
+    transition: transform 0.3s ease;
+    /* Smooth scaling transition */
+    will-change: transform;
+    /* Optimize for performance */
+    backface-visibility: hidden;
+    /* Prevent backface visibility issues */
+    opacity: .9;
+}
+
+.image-container:hover .scale-image {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+/* Color overlay styling using ::before */
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 200, 198, 0.009);
+    /* Adjust the color and opacity */
+    /* Color overlay is on top of the main image */
+}
+
+/* Image overlay styling using ::after */
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image-index);
+    background-size: cover;
+    /* Ensure the overlay image covers the entire container */
+    background-position: center;
+    opacity: 0.1;
+    /* Adjust the opacity of the overlay image */
+    z-index: 1;
+    /* Image overlay on top of the color overlay */
+}
+
+/* Text/Link content styling */
+.cat-column a {
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    /* Stack text below the image */
+    text-decoration: none;
+    height: 100%;
+    /* Full height of the column */
+}
+
+.text-content {
+    padding-top: 10px;
+    /* Space between image and text */
+}
+
+.cat-p {
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+/* Margin and padding */
+.mr-20 {
+    padding-right: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 1025px) { /* Larger Desktop */
+    .cat-column-first {
+        flex: 0 0 calc(33% - 40px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin: auto 10px auto 10px;
+        text-align: center;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    .cat-column:first-child {
+            flex: 0 0 calc(33% - 20px);
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0px 20px 0px 0px;
+        }
+        .cat-column.special {       
+             flex: 0 0 calc(33% - 20px);
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            margin-right: 40px;
+            padding: 0px 20px 0px 20px;
+            }
+    .cat-column {
+        flex: 0 0 calc(33% - 40px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+        padding: 0px 10px;
+        /* Space between columns */
+    }
+    .cat-column.border-left {
+        flex: 0 0 calc(33% - 30px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin: 0px 0px;
+        padding-left: 20px;
+        /* Space between columns */
+    }
+}
+
+@media (min-width: 769px) { /* Desktop, Tablet */
+
+    .cat-scroll-container {
+        margin: 20px 30px;
+    }
+    /* Desktop and tablet devices */
+    .hide-desktop-tablet {
+        display: none;
+        /* Hide the element */
+    }
+
+    .border-left {
+        border-left: .5px solid var(--darkgray);
+    }
+
+    .border-right {
+        border-right: .5px solid var(--darkgray);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { /* Tablet, Small Desktop */
+    .cat-column-first {
+        margin: auto 0px auto;
+        text-align: center;
+        padding: 0px 0px 0px 20px;
+        justify-content: center;
+        flex:0 0 calc(33% - 20px);
+    }
+}
+
+@media (max-width: 1024px) { /* Tablet, Mobile  */
+    /* Tablet */
+    .cat-column {
+        flex: 0 0 calc(33% - 20px);
+        /* 2 columns with margin */
+        padding: 0px 10px;
+        /* Space between columns */
+        margin-bottom: 20px;
+        /* Space below columns */
+    }
+    .cat-column-custom {
+        flex: 0 0 calc(33% - 20px);
+        /* 2 columns with margin */
+        margin: 10px;
+        /* Space between columns */
+        margin-bottom: 20px;
+        /* Space below columns */
+    }
+
+    .cat-column:last-child {
+        margin-right: 0;
+        /* Remove right margin for the last column */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+
+    /* Mobile */
+    .cat-scroll-container {
+        margin: 0px 15px 10px;
+    }
+    .cat-column {
+        flex: 0 0 100%;
+        margin-bottom: 2px;
+        max-width: calc(100vw - 30px);
+        margin: 0px 15px 20px 0px;
+        padding: 0;
+    }
+}
+
+/* Hide elements for mobile  */
+@media (max-width: 768px) { /* Mobile */
+
+    /* Mobile devices */
+    .hide-mobile {
+        display: none;
+        /* Hide the element */
+    }
+}
+
+
+
+.cat-column-last {
+    padding: 0px 20px;
+    min-width: 355px;
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.cat-column-special-border-right {    
+    margin-bottom: 2px;
+    width: fit-content;
+    border-right: .5px solid var(--darkgray);
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+   padding: 0px 10px 0px 10px;
+   }
+
+
+   .text-container-2 {
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+}
+
+.text-container-2 p {
+    z-index: 1;
+}
+
+.overlay-gif-2 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.text-container-2:hover .overlay-gif-2 {
+    opacity: 1;
+}

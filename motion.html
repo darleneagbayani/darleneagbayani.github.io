@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/portfolio-style.css"> <!-- Link to CSS -->
+  <link rel="icon" href="./../images/logo.svg" type="image/svg+xml">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+</head>
+
+<body>
+  <div class="nav-menu" role="navigation">
+    <div id="menuToggle">
+      <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+      <input type="checkbox" />
+
+      <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+      <ul id="menu">
+        <li><a href="./index.html" title="Home">Home</a></li>
+        <li class="">
+          <div tabindex="0" class="onclick-menu">
+            <a href="./index.html" class="portfolio-trigger visited">PORTFOLIO</a>
+            <ul class="onclick-menu-content">
+              <li><a class="mobile-drop" href="./web.html" title="Web Design">Web Design</a></li>
+              <li><a class="mobile-drop" href="./graphic.html" title="Graphic Design">Graphic &
+                  Brand Design</a></li>
+              <li><a class="mobile-drop" href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+              <li><a class="mobile-drop" href="./illustration.html" title="Illustration">Illustration</a></li>
+              <li><a class="mobile-drop" href="#" title="Motion Design"><strong>Motion Design</strong></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./about.html" title="About">About</a></li>
+        <li><a href="./resume.html" title="Resume">Resume</a></li>
+        <li><a href="./contact.html" title="Contact">Contact</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-div">
+    <div id="desktop" class="sticky-wrapper">
+      <header>
+        <div class="header-content">
+
+          <div class="header-left">
+            <h1>Elevating Brands with Award-Winning Design</h1>
+            <a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+          </div>
+          <div class="header-right">
+            <p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer
+              Science, and top-ranked designs at my agency, I craft visually compelling and
+              user-centric experiences that stand out.</p>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="dropdown"><a class="" href="./index.html" title="Home">Home</a></div>
+        <div class="dropdown portfolio-dropdown">
+          <a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+          <div class="dropdown-content">
+            <a href="./web.html" title="Web Design">Web Design</a>
+            <a href="./graphic.html" title="Graphic Design">Graphic Design</a>
+            <a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a>
+            <a href="./illustration.html" title="Illustration">Illustration</a>
+            <a href="#" title="Motion Design"><strong>Motion Design</strong></a>
+          </div>
+        </div>
+        <div class="dropdown"><a href="./about.html" title="About">About</a></div>
+        <div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+        <div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+      </nav>
+    </div>
+    <header id="mobile">
+      <div class="header-content">
+        <div class="header-left">
+          <h1>Elevating Brands with Award-Winning Design</h1>
+          <a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+        </div>
+        <div class="header-right">
+          <p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer Science (HCI
+            focus), and top-ranked designs at my agency, I craft visually compelling and user-centric
+            experiences that stand out.</p>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile" class="sticky-wrapper">
+      <nav>
+        <div class="dropdown"><a href="./index.html" title="Home">Home</a></div>
+        <div class="dropdown">
+          <a href="#" title="Portfolio" class="dropdown-toggle active">Portfolio</a>
+          <div class="dropdown-content">
+            <a href="./web.html" title="Web Design">Web Design</a>
+            <a href="./graphic.html" title="Graphic Design">Graphic Design</a>
+            <a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a>
+            <a href="./illustration.html" title="Illustration">Illustration</a>
+            <a href="#" title="Motion Design"><strong>Motion Design</strong></a>
+          </div>
+        </div>
+        <div class="dropdown"><a href="./about.html" title="About">About</a></div>
+        <div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+        <div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+      </nav>
+    </div>
+    <section class="grid-outer">
+
+      <div class="grid-with-label">
+        <div class="rotated-label" id="motion">Motion Design.</div>
+        <section class="grid">
+
+          <div class="card">
+            <a href="#" class="open-modal" data-modal="holiday-modal" title="Holiday Cheer">
+              <video autoplay muted loop playsinline>
+  <source src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-holiday-thumbnail.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+              <span>Holiday Cheer</span>
+            </a>
+          </div>
+
+          <div class="card">
+
+            <a href="#" class="open-modal" data-modal="ppt-modal" title="GotSport Company Presentation">
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/motion-graphics-thumbnail.webp"
+                alt="GotSport Company Presentation">
+              <span>Animate To Impress</span></a>
+          </div>
+          <div class="card">
+
+            <a href="#" class="open-modal" data-modal="n2k-modal" title="Waikiki Beach Technology">
+              <img
+                src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/n2k-ocean-thumbnail.webp"
+                alt="Waikiki Beach Technology">
+              <span>Waves Of Technolofy</span></a>
+          </div>
+
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <a href="tel:18084995911" title="Call">808.499.5911</a><br>
+          <a href="mailto:darlene.agbayani@gmail.com">darlene.agbayani@gmail.com</a>
+          </p>
+          <ul class="footer-services">
+            <li><a href="./about.html" title="About">About</a></li>
+            <li><a href="./resume.html" title="Resume">Resume</a></li>
+            <li><a href="./web.html" title="Web Design">Web Design</a></li>
+            <li><a href="./graphic.html" title="Graphic Design">Graphic Design</a></li>
+            <li><a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+            <li><a href="./illustration.html" title="Illustration">Illustration</a></li>
+            <li><a href="#" title="Motion Design">Motion Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <img src="./../images/logo.svg" alt="Logo" class="footer-logo">
+        </div>
+      </footer>
+  </div>
+
+  <!-- Modal -->
+  <!-- ELECTROLUX MODAL -->
+  <div id="holiday-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Holiday Cheer</h2>
+        <p>A festive social media animation designed for the holiday season, featuring a stylized wreath in motion. This piece blends brand colors with a touch of seasonal warmth, creating an engaging and on-brand visual to spread cheer across digital platforms.
+</p>
+      </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <video style="max-width: 100%;" id="main-image-tap" autoplay muted loop playsinline>
+  <source src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/gotsport-holiday-frameless.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- AWARD MODAL -->
+  <div id="ppt-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Animate To Impress</h2>
+        <p>A conceptual presentation design for GotSport, created as a test project to showcase how animation can elevate corporate storytelling. The layout, pacing, and transitions were tailored to reflect the company’s energetic, tech-forward identity while maintaining professionalism and clarity.
+
+</p>
+      </div>
+
+      <!-- Thumbnail grid --><div class="controls">
+  <a id="prev">&larr;</a>
+  <span id="page-num">1</span> / <span id="page-count">--</span>
+  <a id="next"> &rarr;</a>
+</div>
+
+<canvas id="pdf-canvas"></canvas>
+
+    </div>
+  </div>
+
+
+
+  <!-- COMPTON MODAL -->
+  <div id="n2k-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>Waves Of Technology</h2>
+        <p>An animated gif designed for Network 2000, a tech support company based in Honolulu. The visual merges the iconic Waikiki coastline with abstract technology motifs—like glowing network veins—to symbolize the seamless integration of innovation and island life.
+
+   </p>
+
+      </div>
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-travel-mobile"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/waikiki-beach.gif"
+          alt="Paisley Bandana Girl Digital">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SHARPIFY MODAL -->
+  <div id="tiger-modal" class="modal">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h2>The Purr-fect Handyman</h2>
+        <p>Created as a mascot for an HVAC and plumbing brand, The Purr-fect Handyman brings a playful, approachable face to home services. This character was designed to build brand trust and memorability, using a clever twist on the “handyman” persona while still conveying professionalism and technical reliability.
+
+       </p>
+
+      </div>
+
+      <!-- Thumbnail grid -->
+      <div class="modal-thumbnail-grid">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tiger-on-shirt-thumbnail.webp"
+          alt="Tiger Mascot" class="thumb" data-target="main-image-sharpify">
+        <img
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tiger-mascot.webp"
+          alt="Tiger Mascot Printed On Shirt" class="thumb" data-target="main-image-sharpify">
+          </div>
+
+      <!-- Full-size image -->
+      <div class="modal-image-display">
+        <img id="main-image-sharpify"
+          src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/tiger-on-shirt-thumbnail.webp"
+          alt="Tiger Mascot" >
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Link to JS -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+.border-top {
+    border-top: .5px solid var(--black);
+}
+
+/*******************************************
+************** Recent Works ****************/
+.pr { padding-right:20px;}
+/* Container styling */
+.coming-scroll-container {
+    padding: 5px 0px;
+    margin: 20px 0px;
+    /* Full width minus margin */
+    scroll-behavior: auto;
+    /* Smooth scroll effect */
+    display: contents;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch !important;
+    /* Enable smooth scrolling for mobile Safari */
+}
+
+.coming-scroll-container-header {
+    margin: 20px 15px 0px;
+    padding: 10px 0px;
+    width: calc(100% - 30px);
+    /* Full width minus margin */
+    scroll-behavior: auto;
+    /* Smooth scroll effect */
+    display: flex;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Enable smooth scrolling for mobile Safari */
+}
+
+/* Scrollbar styling */
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+.coming-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.coming-scroll-container {
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE and Edge */
+}
+
+/* Image styling */
+/* Image Container for Aspect Ratio */
+.image-container {
+    position: relative;
+    /* For absolute positioning of image */
+    overflow: hidden;
+    /* Prevent overflow of image */
+    /* Full width of the column */
+    padding-top: 40%;
+    /* 5:2 aspect ratio */
+    border: 1px solid var(--darkgray);
+}
+
+/* Scaling Image */
+.scale-image {
+    position: absolute;
+    /* Position the image absolutely */
+    top: 0;
+    /* Align to the top of the container */
+    left: 0;
+    /* Align to the left of the container */
+    width: calc(100% + 1px);
+    /* Full width of the container */
+    height: 100%;
+    /* Full height of the container */
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    object-position: top center;
+    /* Center the image */
+    transition: transform 0.3s ease;
+    /* Smooth scaling transition */
+    will-change: transform;
+    /* Optimize for performance */
+    backface-visibility: hidden;
+    /* Prevent backface visibility issues */
+    opacity: .9;
+}
+
+.image-container:hover .scale-image {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+/* Color overlay styling using ::before */
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 200, 198, 0.009);
+    /* Adjust the color and opacity */
+    /* Color overlay is on top of the main image */
+}
+
+/* Image overlay styling using ::after */
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image-index);
+    background-size: cover;
+    /* Ensure the overlay image covers the entire container */
+    background-position: center;
+    opacity: 0.1;
+    /* Adjust the opacity of the overlay image */
+    z-index: 1;
+    /* Image overlay on top of the color overlay */
+}
+
+/* Text/Link content styling */
+.coming-column a {
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    /* Stack text below the image */
+    text-decoration: none;
+    height: 100%;
+    /* Full height of the column */
+}
+
+.text-content {
+    padding-top: 10px;
+    /* Space between image and text */
+}
+
+.coming-p {
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+
+/* Margin and padding */
+.mr-20 {
+    padding-right: 20px;
+}
+
+.coming-column:first-child {
+}
+/* Responsive styles */
+@media (min-width: 1025px) { /* Larger Desktop */
+    .coming-column-first {
+        flex: 0 0 calc(50% - 20px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin: auto 10px auto 10px;
+        text-align: left;
+        justify-content: start;
+        padding: 0px 10px;
+        margin: 20px 0px;
+    }
+    .coming-column:first-child {
+            flex: 0 0 calc(50% - 20px);
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+            justify-content: start;
+            margin: 0;
+            padding: 0px 20px 0px 0px;
+        }
+        .coming-column.special {       
+             flex: 0 0 calc(50% - 20px);
+            box-sizing: border-box;
+            position: relative;
+            text-align: left;
+            justify-content: start;
+            overflow: hidden;
+            margin-right: 40px;
+            padding: 0px 20px 0px 20px;
+            }
+    .coming-column {
+        flex: 0 0 calc(50% - 20px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        text-align: left;
+        justify-content: start;
+        overflow: hidden;
+        margin-left: 20px;
+        padding: 0px 10px;
+        /* Space between columns */
+    }
+    .coming-column.border-left {
+        flex: 0 0 calc(50% - 20px);
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+        justify-content: start;
+        margin: 0px 0px;
+        padding: 0px 20px;
+        /* Space between columns */
+    }
+}
+
+@media (min-width: 769px) { /* Desktop, Tablet */
+
+    /* Desktop and tablet devices */
+    .hide-desktop-tablet {
+        display: none;
+        /* Hide the element */
+    }
+
+    .border-left {
+        border-left: .5px solid var(--darkgray);
+    }
+
+    .border-right {
+        border-right: .5px solid var(--darkgray);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { /* Tablet, Small Desktop */
+    .coming-column-first {
+        margin: auto 20px auto;
+        text-align: left;
+        padding:0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) { /* Tablet, Mobile  */
+    /* Tablet */
+    .coming-column {
+        text-align: left;
+        justify-content: start;
+        flex: 0 0 calc(50% - 20px);
+        /* 2 columns with margin */
+        padding: 0px 20px 0px 0px;
+        /* Space between columns */
+        margin-bottom: 20px;
+        /* Space below columns */
+    }
+    .coming-column:last-child {
+        padding: 0px 0px 0px 20px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+
+    /* Mobile */
+    .coming-scroll-container {
+        margin: 0px 15px 10px;
+    }
+    .coming-column {
+        flex: 0 0 100%;
+        margin-bottom: 2px;
+        max-width: calc(100vw - 30px);
+        margin: 0px 15px 20px 0px;
+        padding: 0px 15px 0px;
+    }
+}
+
+/* Hide elements for mobile  */
+@media (max-width: 768px) { /* Mobile */
+    .coming-column.border-left {
+        width:100%;
+        /* 3 columns on desktop */
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin: 0px 15px;
+        padding-left: 0px;
+        /* Space between columns */
+    }
+    /* Mobile devices */
+    .hide-mobile {
+        display: none;
+        /* Hide the element */
+    }
+
+.letter.custom.header {
+    margin: 0px 15px;
+    display: ;
+}
+}
+@media (min-width: 769px) {
+.text-container-coming {
+    max-width: calc(66% - 40px);
+    /* 3 columns on desktop */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin: auto 10px auto 10px;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+}
+.cutout-letter-coming {    
+    margin: 1rem 0 .2rem 0;
+    font-size: 8vw;
+    line-height: 1.2;
+    /* Large H1-sized font */
+    /* Allow the letter to span multiple lines */
+    color: transparent;
+    /* Transparent text color */
+    background-color: var(--black);
+    /* Ensure the background color is black */
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), var(--bg-image-index);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Use background of the body */
+    background-size: cover;
+    -webkit-background-clip: text;
+    padding: 1vw 1vw 1.1vw 1vw;
+    background-clip: text;
+    /* Space between the letter and the rest of the text */
+    display: inline-block;
+    float: left;
+    /* Float the large letter to the left */
+    font-family: 'Baleny', serif;
+    transform: scaleY(1.5);
+    letter-spacing: -2.5px;
+}
+
+@media (min-width: 769px) {
+    .coming-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%; /* Make sure it spans the full width of the parent */
+        flex-wrap: wrap; /* Allow contents to start on new rows if needed */
+    }
+.coming-row:last-child {
+    padding: 20px 0px 0px 0px; /* Optional: space between rows */
+}
+}
+
+.coming-row {
+    min-width: 100%; /* Make sure it spans the full width of the parent */
+    margin: 20px 0px; /* Optional: space between rows */
+}

@@ -2,311 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignsByDarlene - Home</title>
-    <!-- Link to your CSS stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Font Awesome -->
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Google Font (Poppins) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-        <link rel="icon" type="image/png" href="favicon.ico">
-    <!-- Add any other CSS files as needed -->
-
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="./css/style.css"> <!-- Link to CSS -->
+	<link rel="icon" href="./../images/logo.svg" type="image/svg+xml">
 </head>
 
 <body>
-    <!-- Your portfolio content goes here -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container py-4">
-            <button class="navbar-toggler" id="navbarToggleBtn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div id="nav-icon1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
+	<div class="nav-menu" role="navigation">
+		<div id="menuToggle">
+			<!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+			<input type="checkbox" />
 
-            <!-- Logo -->
-            <div class="row hide-desktop text-center">
-                <div class="col px-4 text-right">
-                    <a href="#" title="Home"><img src="images/header-title.webp" alt="Designs by Darlene"
-                            class="img-custom"></a>
-                </div>
-            </div>
+			<!--
+        Some spans to act as a hamburger.
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" title="Home">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            PORTFOLIO
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="portfolio/web-design.html" title="Web Design">WEB
-                                    DESIGN</a></li>
-                            <li><a class="dropdown-item" href="portfolio/graphic-design.html"
-                                    title="Graphic Design">GRAPHIC DESIGN</a></li>
-                            <li><a class="dropdown-item" href="portfolio/ux-ui-design.html" title="UX/UI Design">UX/UI
-                                    DESIGN</a></li>
-                            <li><a class="dropdown-item" href="portfolio/motion-graphic.html"
-                                    title="Motion Graphic">MOTION GRAPHIC</a></li>
-                            <li><a class="dropdown-item" href="portfolio/illustration.html"
-                                    title="Illustrations">ILLUSTRATION</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" title="About">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html" title="Resume">RESUME</a>
-                    </li>
-                </ul>
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+			<span></span>
+			<span></span>
+			<span></span>
 
-                <div class="navbar-nav hide-mobile-tablet ms-auto">
-                    <li class="nav-item text-end dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            SOCIAL
-                        </a>
-                        <ul class="dropdown-menu social-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item text-end"
-                                    href="https://www.linkedin.com/in/darlene-agbayani-16b737146/in/darlene-agbayani-16b737146/"
-                                    title="Linkedin">LINKEDIN</a></li>
-                            <li><a class="dropdown-item text-end"
-                                    href="https://www.instagram.com/thedar2d2/thedar2d2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                                    title="Instagram">INSTAGRAM</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="navbar-nav hide-desktop ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            SOCIAL
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item"
-                                    href="https://www.linkedin.com/in/darlene-agbayani-16b737146/in/darlene-agbayani-16b737146/"
-                                    title="Linkedin">LINKEDIN</a></li>
-                            <li><a class="dropdown-item"
-                                    href="https://www.instagram.com/thedar2d2/thedar2d2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                                    title="Instagram">INSTAGRAM</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="container py-2">
-        <!-- Logo -->
-        <div class="row hide-mobile-tablet text-center">
-            <div class="col px-4 text-right">
-                <a href="#" title="Home"><img src="images/header-title.webp" alt="Designs by Darlene"
-                        class="img-custom"></a>
-            </div>
-        </div>
-        <div class="row hide-mobile py-5 px-4 body-row justify-content-center pb-5">
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/web-design.html" title="Web Design">
-                    <div class="portfolio-item" alt="Pink Background of Website"
-                        style="background-image: url('images/cat-2.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>WEB DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                </a>
-                <div class="row justify-content-center py-2">WEB DESIGN</div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/graphic-design.html" title="Graphic Design">
-                    <div class="portfolio-item" alt="Graphic of Red Watercolor Background"
-                        style="background-image: url('images/cat-3.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>GRAPHIC DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                </a>
-                <div class="row justify-content-center py-2">GRAPHIC DESIGN</div>
-            </div>
+			<!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+			<ul id="menu">
+				<li><a class="visited" href="./index.html" title="Home">Home</a></li>
+				<li class="">
+					<div tabindex="0" class="onclick-menu">
+						<a href="#" class="portfolio-trigger active">PORTFOLIO</a>
+						<ul class="onclick-menu-content">
+							<li><a class="mobile-drop" href="./web.html" title="Web Design">Web Design</a></li>
+							<li><a class="mobile-drop" href="./graphic.html" title="Graphic Design">Graphic &
+									Brand Design</a></li>
+							<li><a class="mobile-drop" href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+							<li><a class="mobile-drop" href="./illustration.html" title="Illustration">Illustration</a></li>
+							<li><a class="mobile-drop" href="./motion.html" title="Motion Design">Motion Design</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+        <li><a href="./about.html" title="About">About</a></li>
+				<li><a href="./resume.html" title="Resume">Resume</a></li>
+				<li><a href="./contact.html" title="Contact">Contact</a></li>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/ux-ui-design.html" title="UX/UI Design">
-                    <div class="portfolio-item" alt="Ipad With UX/UI Wireframe"
-                        style="background-image: url('images/cat-1.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>UX/UI DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">UX/UI DESIGN</div>
-                </a>
-            </div>
+	<div class="main-div">
+		<div id="desktop" class="sticky-wrapper">
+			<header>
+				<div class="header-content">
 
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/motion-graphic.html" title="Motion Graphic">
-                    <div class="portfolio-item" alt="Motion Graphic"
-                        style="background-image: url('images/motion-graphic/slide/slide-3.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>UX/UI DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">MOTION GRAPHIC</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/illustration.html" title="Illustration">
-                    <div class="portfolio-item" alt="Illustration of Girl"
-                        style="background-image: url('images/cat-4.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>ILLUSTRATION</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">ILLUSTRATION</div>
-                </a>
-            </div>
-        </div>
+					<div class="header-left">
+						<h1>Elevating Brands with Award-Winning Design</h1>
+						<a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+					</div>
+					<div class="header-right">
+						<p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer
+							Science, and top-ranked designs at my agency, I craft visually compelling and
+							user-centric experiences that stand out.</p>
+					</div>
+				</div>
+			</header>
+			<nav>
+				<div class="dropdown"><a class="active" href="./index.html" title="Home">Home</a></div>
+				<div class="dropdown portfolio-dropdown">
+					<a href="#" title="Portfolio" class="dropdown-toggle">Portfolio</a>
+					<div class="dropdown-content">
+						<a href="./web.html" title="Web Design">Web Design</a>
+						<a href="./graphic.html" title="Graphic Design">Graphic Design</a>
+						<a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a>
+						<a href="./illustration.html" title="Illustration">Illustration</a>
+						<a href="./motion.html" title="Motion Design">Motion Design</a>
+					</div>
+				</div>
+				<div class="dropdown"><a href="./about.html" title="About">About</a></div>
+				<div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+				<div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+			</nav>
+		</div>
 
-        <div class="row px-4 hide-desktop-tablet body-row pb-5">
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/web-design.html" title="Web Design">
-                    <div class="portfolio-item" alt="Pink Background of Website"
-                        style="background-image: url('images/cat-2.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>WEB DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                </a>
-                <div class="row justify-content-center py-2">WEB DESIGN</div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/graphic-design.html" title="Graphic Design">
-                    <div class="portfolio-item" alt="Graphic of Red Watercolor Background"
-                        style="background-image: url('images/cat-3.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>GRAPHIC DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                </a>
-                <div class="row justify-content-center py-2">GRAPHIC DESIGN</div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/ux-ui-design.html" title="UX/UI Design">
-                    <div class="portfolio-item" alt="Ipad With UX/UI Wireframe"
-                        style="background-image: url('images/cat-1.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>UX/UI DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">UX/UI DESIGN</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/motion-graphic.html" title="Motion Graphic">
-                    <div class="portfolio-item" alt="Motion Graphic"
-                        style="background-image: url('images/motion-graphic/slide/slide-3.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>UX/UI DESIGN</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">MOTION GRAPHIC</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-6 col-6 text-center py-4">
-                <a href="portfolio/illustration.html" title="Illustration">
-                    <div class="portfolio-item" alt="Illustration of Girl"
-                        style="background-image: url('images/cat-4.webp');">
-                        <div class="overlay">
-                            <!--<div class="overlay-content">
-                            <p>ILLUSTRATION</p>
-                        </div>-->
-                        </div>
-                    </div>
-                    <div class="row justify-content-center py-2">ILLUSTRATION</div>
-                </a>
-            </div>
-        </div>
+		<header id="mobile">
+			<div class="header-content">
+				<div class="header-left">
+					<h1>Elevating Brands with Award-Winning Design</h1>
+					<a href="mailto:agbayani.darlene@gmail.com" class="btn" title="Send Email">Get in Contact</a>
+				</div>
+				<div class="header-right">
+					<p>With 9 years of expertise in web, graphic, and UX/UI design, a Master's in Computer Science (HCI
+						focus), and top-ranked designs at my agency, I craft visually compelling and user-centric
+						experiences that stand out.</p>
+				</div>
+			</div>
+		</header>
 
-        <div class="row px-4 footer">
-            <div class="container py-2">
-                <div class="row border-bottom-custom"></div>
-                <div class="row">
-                    <div class="col-lg-4 py-2">
-                        <p>CONTACT</p>
-                        <p><span class="hide-desktop-tablet"><a href="mailto:agbayani.darlene@gmail.com" alt="Email"><i class="fa fa-envelope px-1"></i></a></span><span class="hide-mobile"><a href="mailto:agbayani.darlene@gmail.com" alt="Email">agbayani.darlene@gmail.com</a></span><br>
-                            <a href="tel:8084995911" alt="Phone">808.499.5911</a><br>
-                            New York, NY
-                        </p>
-                    </div>
-                    <div class="col-lg-4 py-2">
-                        <p>SITE MAP</p>
-                        <ul style="list-style:none; padding:0; margin:0;">
-                            <li><a href="#" title="Home">Home</a></li>
-                            <li><a href="./portfolio/web-design.html" title="Web Design">Web Design</a></li>
-                            <li><a href="./portfolio/graphic-design.html" title="Graphic Design">Graphic Design</a></li>
-                            <li><a href="./portfolio/ux-ui-design.html" title="UX/UI Design">UX/UI Design</a></li>
-                            <li><a href="./portfolio/motion-graphic.html" title="Motion Graphic">Motion Graphic</a></li>
-                            <li><a href="./portfolio/illustration.html" title="Illustration">Illustration</a></li>
-                            <li><a href="./about.html" title="About">About</a></li>
-                            <li><a href="./resume.html" title="Resume">Resume</a></li>
-                            <li>
-                            </li>
-                        </ul>
-                        <p></p>
-                    </div>
-                    <div class="col-lg-4 py-2 social-icons">
-                        <p>SOCIAL</p>
-                        <a href="https://www.linkedin.com/in/darlene-agbayani-16b737146/" target="_blank"
-                            title="Linkedin"><i class="fa fa-linkedin px-1"></i></a>
-                        <a href="https://www.instagram.com/thedar2d2/" target="_blank" title="Instagram"><i
-                                class="fa fa-instagram px-1"></i></a>
-                        </ul>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- JavaScript import -->
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+		<div id="mobile" class="sticky-wrapper">
+			<nav>
+				<div class="dropdown active"><a class="active" href="./index.html" title="Home">Home</a></div>
+				<div class="dropdown">
+					<a class="" href="./index.html" title="Portfolio">Portfolio</a>
+					<div class="dropdown-content">
+						<a class="dropdown-link" href="./web.html" title="Web Design">Web</a>
+						<a href="./graphic.html" title="Graphic Design">Graphic</a>
+						<a href="./ux-ui.html" title="UX/UI Design">UX/UI</a>
+						<a href="./illustration.html" title="Illustration">Illustration</a>
+						<a href="./motion.html" title="Motion Design">Motion Design</a>
+					</div>
+				</div>
+				<div class="dropdown"><a href="./about.html" title="About">About</a></div>
+				<div class="dropdown"><a href="./resume.html" title="Resume">Resume</a></div>
+				<div class="dropdown"><a href="./contact.html" title="Contact">Contact</a></div>
+			</nav>
+		</div>
 
-    <!-- Add any other JavaScript files as needed -->
+		<section class="grid">
+			<div class="card">
+				<a href="./web.html" title="Web Design">
+					<img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/web-design-thumbnail.webp"
+						alt="Web Design">
+					<span>WEB DESIGN</span></a>
+			</div>
+			<div class="card">
+				<a href="./illustration.html" title="Illustration">
+				<img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/illustration-thumbnail.webp"
+					alt="Illustration">
+				<span>ILLUSTRATION</span>
+			</div>
+			<div class="card">
+				<a href="./graphic.html" title="Graphic Design">
+				<img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/graphic-brand-design-thumbnail.webp"
+					alt="Graphic Design">
+				<span>GRAPHIC DESIGN</span></a>
+			</div>
+			<div class="card">
+				<a href="./ux-ui.html" title="UX/UI Design">
+				<img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/ux-ui-design-thumbnail.webp"
+					alt="UX/UI Design">
+				<span>UX/UI DESIGN</span></a>
+			</div>
+			<div class="card">
+				<a href="./motion.html" title="Motion Design">
+				<img src="https://raw.githubusercontent.com/designsbydarlene/designsbydarlene.github.io/refs/heads/main/images/motion-graphics-thumbnail.webp"
+					alt="Motion Design">
+				<span>MOTION GRAPHICS</span></a>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-left">
+				<a href="tel:18084995911" title="Call">808.499.5911</a><br>
+				<a href="mailto:darlene.agbayani@gmail.com">darlene.agbayani@gmail.com</a>
+				</p>
+				<ul class="footer-services">
+					<li><a href="./about.html" title="About">About</a></li>
+					<li><a href="./resume.html" title="Resume">Resume</a></li>
+					<li><a href="./web.html" title="Web Design">Web Design</a></li>
+					<li><a href="./graphic.html" title="Graphic Design">Graphic Design</a></li>
+					<li><a href="./ux-ui.html" title="UX/UI Design">UX/UI Design</a></li>
+					<li><a href="./illustration.html" title="Illustration">Illustration</a></li>
+					<li><a href="./motion.html" title="Motion Graphics">Motion Design</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+            <a href="#" title="Home"><img src="./../images/logo.svg" alt="Logo" class="footer-logo"></a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Link to JS -->
+	<script src="./js/script.js"></script>
 
 </body>
 
