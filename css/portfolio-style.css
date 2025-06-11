@@ -947,7 +947,7 @@ a.link { color: black !important; text-decoration: underline; }
   }
   .resume-section h2 {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 800;
     text-transform: titlecase;
     margin-bottom: 1rem;
     font-family: "Cormorant Garamond", serif;
@@ -966,7 +966,7 @@ a.link { color: black !important; text-decoration: underline; }
   @media(min-width: 1101px) {
   .resume-entry {
     display: flex;
-	border-bottom: .5px solid black;
+	border-bottom: 1px solid black;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 0.5rem;
