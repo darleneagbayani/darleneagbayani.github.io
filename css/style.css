@@ -656,3 +656,16 @@ a.mobile-drop-first { padding-top:1em !important;}
   background: transparent;
   pointer-events: auto;
 }
+
+
+		.video-container {
+  max-width: 800px; /* Or whatever your container limit is */
+  width: 100%;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
