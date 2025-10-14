@@ -52,7 +52,7 @@ document.querySelectorAll('.modal-thumbnail-grid .thumb').forEach(thumb => {
     }
   });
 });
-const url = 'https://designsbydarlene.github.io/byteblink-presentation.pdf';
+const url = 'https://darleneagbayani.github.io/byteblink-presentation.pdf';
 
 let pdfDoc = null,
     pageNum = 1,
