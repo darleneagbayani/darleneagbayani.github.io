@@ -12,86 +12,38 @@
       }
 
       .st2 {
-        fill-opacity: .4;
-      }
-
-      .st3 {
         isolation: isolate;
       }
 
-      .st4 {
-        mask: url(#mask-1);
-      }
-
-      .st5 {
+      .st3 {
         clip-path: url(#clippath-1);
       }
 
-      .st6 {
-        clip-path: url(#clippath-3);
-      }
-
-      .st7 {
-        clip-path: url(#clippath-4);
-      }
-
-      .st8 {
+      .st4 {
         clip-path: url(#clippath-2);
       }
-
-      .st9 {
-        fill: #fff;
-      }
-
-      .st10 {
-        clip-path: url(#clippath);
-      }
     </style>
-    <clipPath id="clippath">
-      <rect class="st0" width="271.2" height="190.1"/>
-    </clipPath>
-    <mask id="mask" x="-135.8" y="-19" width="442.1" height="294.5" maskUnits="userSpaceOnUse">
-      <g id="e228bdb605">
-        <rect class="st2" x="-27.2" y="-19" width="325.6" height="228.3"/>
-      </g>
-    </mask>
     <clipPath id="clippath-1">
-      <rect class="st0" x="0" width="271.2" height="190.1"/>
+      <rect class="st0" x="77.8" y="14.5" width="194.4" height="120.1"/>
     </clipPath>
     <clipPath id="clippath-2">
-      <rect class="st0" width="271.2" height="190.1"/>
+      <rect class="st0" x="72.8" y="8.4" width="199.4" height="181.7"/>
     </clipPath>
-    <clipPath id="clippath-3">
-      <rect class="st0" x="76.8" y="14.5" width="194.4" height="120.1"/>
-    </clipPath>
-    <clipPath id="clippath-4">
-      <rect class="st0" x="71.8" y="8.4" width="199.4" height="181.7"/>
-    </clipPath>
-    <mask id="mask-1" x="71.8" y="8.4" width="237.9" height="181.7" maskUnits="userSpaceOnUse">
+    <mask id="mask" x="72.8" y="8.4" width="237.9" height="181.7" maskUnits="userSpaceOnUse">
       <g id="d7b1b66342">
-        <image class="st3" width="3604" height="2753" transform="translate(71.8 8.4) scale(0)" xlink:href="masc-thumbnail-3.png"/>
+        <image class="st2" width="3604" height="2753" transform="translate(72.8 8.4) scale(0)" xlink:href="masc-thumbnail-3.png"/>
       </g>
     </mask>
   </defs>
-  <g class="st10">
-    <g>
-      <path class="st9" d="M0,0h271.2v190.1H0V0Z"/>
-      <path class="st9" d="M0,0h271.2v190.1H0V0Z"/>
-      <g class="st1">
-        <g class="st5">
-          <g class="st8">
-            <image class="st3" width="6016" height="4000" transform="translate(-135.8 -18.5) scale(0)" xlink:href="masc-thumbnail-1.png"/>
-          </g>
-        </g>
-      </g>
-    </g>
+  <g id="_x33_VsD2L">
+    <image id="_x33_VsD2L1" data-name="_x33_VsD2L" width="600" height="399" transform="translate(-12.8) scale(.5)" xlink:href="masc-thumbnail-1.png"/>
   </g>
-  <g class="st6">
-    <image class="st3" width="2048" height="1694" transform="translate(76.7 14.5) scale(0)" xlink:href="masc-thumbnail-2.png"/>
+  <g class="st3">
+    <image class="st2" width="2048" height="1694" transform="translate(77.7 14.5) scale(0)" xlink:href="masc-thumbnail-2.png"/>
   </g>
-  <g class="st7">
-    <g class="st4">
-      <image class="st3" width="3604" height="2753" transform="translate(71.8 8.4) scale(0)" xlink:href="masc-thumbnail-4.png"/>
+  <g class="st4">
+    <g class="st1">
+      <image class="st2" width="3604" height="2753" transform="translate(72.8 8.4) scale(0)" xlink:href="masc-thumbnail-4.png"/>
     </g>
   </g>
 </svg>
